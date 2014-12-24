@@ -1,0 +1,17 @@
+{
+  "name": "norsk-tipping-results",
+  "version": "1.0.0",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zrrrzzt/norsk-tipping-results.git"
+  },
+  "bugs": {
+    "url": "http://github.com/zrrrzzt/norsk-tipping-results/issues"
+  }
+}
