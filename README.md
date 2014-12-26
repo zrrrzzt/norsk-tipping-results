@@ -1,6 +1,7 @@
-#norsk-tipping-results
+#norsk-tipping-results [![Build Status](https://travis-ci.org/zrrrzzt/norks-tipping-results.svg?branch=master)](https://travis-ci.org/zrrrzzt/norsk-tipping-results)
 
-Get the results from Norsk Tippings lottery games 
+Get the results from [Norsk Tippings](https://www.norsk-tipping.no/) lotteries.
+Thes includes Lotto, Keno, Extra, VikingLotto, Joker and EuroJackpot.
 
 ##Installation
 Via npm
@@ -37,3 +38,6 @@ ntr(opts, function(err, data){
   }
 });
 ```
+
+##Disclaimer
+This is not an official API from Norsk Tipping, it might break.
