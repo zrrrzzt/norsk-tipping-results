@@ -13,5 +13,11 @@
   },
   "bugs": {
     "url": "http://github.com/zrrrzzt/norsk-tipping-results/issues"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec test/*.js"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
   }
 }

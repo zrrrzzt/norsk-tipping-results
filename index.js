@@ -14,9 +14,15 @@ function fixResult(inp){
   return json;
 }
 
-function getResults(gametype, callback){
-  var service = services[gametype] || services.lotto
+function getResults(opts, callback){
+  var service
     ;
+
+  if(!opts.type){
+    return callback(new Error('Missing required param: type'), null);
+  }
+
+  service = services[opts.type] || 'lotto';
 
   https.get(service, function(res){
 
