@@ -1,4 +1,4 @@
-#norsk-tipping-results [![Build Status](https://travis-ci.org/zrrrzzt/norks-tipping-results.svg?branch=master)](https://travis-ci.org/zrrrzzt/norsk-tipping-results)
+#norsk-tipping-results [![Build Status](https://travis-ci.org/zrrrzzt/norsk-tipping-results.svg?branch=master)](https://travis-ci.org/zrrrzzt/norsk-tipping-results)
 
 Get the results from [Norsk Tippings](https://www.norsk-tipping.no/) lotteries.
 Thes includes Lotto, Keno, Extra, VikingLotto, Joker and EuroJackpot.
@@ -24,11 +24,10 @@ Pass in an options object.
 ```
 'use strict';
 
-var ntr = require('norsk-tipping-results')
-  , opts = {
-      type:'lotto'
-  }
-  `;
+var ntr = require('norsk-tipping-results');
+var opts = {
+  type:'lotto'
+};
 
 ntr(opts, function(err, data){
   if(err){
