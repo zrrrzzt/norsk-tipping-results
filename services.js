@@ -7,6 +7,6 @@ var services = {
   vikinglotto: 'https://www.norsk-tipping.no/api-vikinglotto/getResultInfo.json',
   joker: 'https://www.norsk-tipping.no/api-joker/getResultInfo.json',
   eurojackpot: 'https://www.norsk-tipping.no/api-eurojackpot/getResultInfo.json'
-}
+};
 
 module.exports = services;
