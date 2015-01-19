@@ -1,13 +1,12 @@
 'use strict';
 
-var https = require('https')
-  , services = require('./services')
-  ;
+var https = require('https');
+var services = require('./services');
 
 function fixResult(inp){
-  var data = inp.toString()
-    , json
-    ;
+  var data = inp.toString();
+  var json;
+
   data = data.replace('while(true);/* 0;', '');
   data = data.replace('/* */', '');
   json = JSON.parse(data);
@@ -15,8 +14,7 @@ function fixResult(inp){
 }
 
 function getResults(opts, callback){
-  var service
-    ;
+  var service;
 
   if(!opts.type){
     return callback(new Error('Missing required param: type'), null);
@@ -27,8 +25,8 @@ function getResults(opts, callback){
   https.get(service, function(res){
 
     res.on('data', function handleData(data){
-      var result = fixResult(data)
-        ;
+      var result = fixResult(data);
+
       return callback(null, result);
     });
 
