@@ -24,6 +24,6 @@
     "test": "mocha --reporter spec test/*.js"
   },
   "devDependencies": {
-    "mocha": "9.1.0"
+    "mocha": "9.1.1"
   }
 }
